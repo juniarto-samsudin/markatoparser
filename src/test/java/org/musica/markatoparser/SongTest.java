@@ -20,19 +20,6 @@ public class SongTest {
     final ByteArrayOutputStream outContent = 
             new ByteArrayOutputStream();
     
-    public SongTest() throws IOException {
-        mySong = new Song("C:\\Users\\juniarto\\Desktop\\IWannaHoldYourHand.txt");
-    }
-
-    /**
-     * Test of getSongFile method, of class Song.
-     */
-    @Test
-    public void testGetSongFile() {
-        String actualSong = mySong.getSongFile();
-        String expected = "C:\\Users\\juniarto\\Desktop\\IWannaHoldYourHand.txt";
-        assertEquals(expected, actualSong);
-    }
     
     
     
