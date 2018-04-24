@@ -5,7 +5,9 @@
  */
 package org.musica.markatoparser;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 /**
  *
@@ -19,8 +21,10 @@ public class Main {
      */
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
-        Song mySong = new Song("C:\\Users\\juniarto\\Desktop\\IWannaHoldYourHand.txt");
-        mySong.print();
+        InputStream is = new FileInputStream("C:\\Users\\juniarto\\Desktop\\yourhand.txt"); 
+        Song mySong = new Song(is);
+        //mySong.print();
+        System.out.print(mySong.printString());
     }
     
 }
